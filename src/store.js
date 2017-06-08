@@ -1,4 +1,4 @@
 import { createStore } from 'redux';
-import freezerReducer from './reducers/freezer';
+import { reducer } from './ducks/freezer';
 
-export default createStore(freezerReducer);
+export default createStore(reducer);

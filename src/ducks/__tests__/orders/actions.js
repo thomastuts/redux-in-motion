@@ -55,3 +55,39 @@ describe('placeOrder()', function () {
     });
   });
 });
+
+describe('fulfillOrder()', function () {
+  it('should have the right action type', function () {
+    const action = actions.fulfillOrder(5);
+    expect(action.type).toEqual(types.FULFILL_ORDER);
+  });
+
+  it('should have the ID in the payload', function () {
+    const action = actions.fulfillOrder(5);
+    expect(action.payload).toEqual(5);
+  });
+});
+
+describe('payForOrder()', function () {
+  it('should have the right action type', function () {
+    const action = actions.payForOrder(5);
+    expect(action.type).toEqual(types.PAY_FOR_ORDER);
+  });
+
+  it('should have the ID in the payload', function () {
+    const action = actions.payForOrder(5);
+    expect(action.payload).toEqual(5);
+  });
+});
+
+describe('cancelOrder()', function () {
+  it('should have the right action type', function () {
+    const action = actions.cancelOrder(5);
+    expect(action.type).toEqual(types.CANCEL_ORDER);
+  });
+
+  it('should have the ID in the payload', function () {
+    const action = actions.cancelOrder(5);
+    expect(action.payload).toEqual(5);
+  });
+});

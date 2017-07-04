@@ -1,4 +1,8 @@
-import { createStore } from 'redux';
-import { reducer } from './ducks/freezer';
+import { createStore, combineReducers } from 'redux';
+import { reducer as freezer } from './ducks/freezer';
 
-export default createStore(reducer);
+const rootReducer = combineReducers({
+  freezer,
+});
+
+export default createStore(rootReducer);

@@ -44,6 +44,14 @@ export const actions = {
         amount,
       }
     };
+  },
+  doSomething() {
+    return function (dispatch, getState) {
+      dispatch({
+        type: 'FOO',
+        payload: getState().freezer.temperature,
+      });
+    };
   }
 };
 

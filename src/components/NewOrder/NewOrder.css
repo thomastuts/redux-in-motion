@@ -1,0 +1,13 @@
+.new-order-scoops-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.new-order-scoops-table td {
+  border-top: 1px solid #3D5965;
+  padding: 10px 0;
+}
+
+.new-order-scoops-table tr:last-child td {
+  border-bottom: 1px solid #3D5965;
+}

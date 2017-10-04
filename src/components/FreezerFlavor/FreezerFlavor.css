@@ -1,0 +1,32 @@
+.freezer-flavor {
+  display: inline-block;
+  color: #fff;
+}
+
+.freezer-flavor__inner {
+  background-color: #7BB1C9;
+  padding: 45px 20px;
+  position: relative;
+  border-top-left-radius: 5px;
+}
+
+.freezer-flavor__name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.freezer-flavor__scoops-counter {
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button.freezer-flavor__restock-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

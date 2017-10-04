@@ -1,0 +1,26 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.panel__title {
+  display: inline-block;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #E8618C;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.panel__content {
+  flex: 1;
+  padding: 20px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  background-color: #FCF0C1;
+  color: #3D5965;
+}

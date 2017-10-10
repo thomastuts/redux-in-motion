@@ -24,7 +24,7 @@ export const actions = {
         type: types.FETCH_EMPLOYEES_REQUEST,
       });
 
-      axios.get('/employees.json')
+      return axios.get('/employees.json')
         .then(function (response) {
           dispatch({
             type: types.FETCH_EMPLOYEES_SUCCESS,

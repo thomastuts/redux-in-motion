@@ -10,7 +10,8 @@
   },
   "devDependencies": {
     "jest-cli": "^20.0.4",
-    "react-scripts": "^1.0.10"
+    "react-scripts": "^1.0.10",
+    "redux-devtools-extension": "^2.13.2"
   },
   "scripts": {
     "start": "react-scripts start",

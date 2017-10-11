@@ -1,0 +1,17 @@
+.button-group {
+  display: flex;
+}
+
+.button-group .button {
+  margin-right: 0;
+}
+
+.button-group .button:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.button-group .button:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

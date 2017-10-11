@@ -1,0 +1,43 @@
+.new-order-form label {
+  display: block;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3D5965;
+}
+
+.new-order-form input {
+  height: 42px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #3D5965;
+  background-color: #7BB1C9;
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+}
+
+.new-order-scoops-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.new-order-scoops-table td {
+  border-top: 1px solid #3D5965;
+  padding: 10px 0;
+}
+
+.new-order-scoops-table tr:last-child td {
+  border-bottom: 1px solid #3D5965;
+}
+
+.new-order-submit-button {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+  border: 0;
+}

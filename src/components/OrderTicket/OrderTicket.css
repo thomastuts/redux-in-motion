@@ -1,0 +1,61 @@
+.order-ticket {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #D8D8D8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.order-ticket:last-child {
+  margin-right: 0;
+}
+
+.order-ticket:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -9px;
+  height: 8px;
+  background-image: url('/order-ticket-edge.svg');
+  background-repeat: repeat-x;
+}
+
+.order-ticket__table {
+  border-collapse: collapse;
+}
+
+.order-ticket__name-and-status td {
+  padding-bottom: 15px;
+}
+
+.order-ticket__name {
+  display: block;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.order-ticket__status {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.order-ticket__product-info td,
+.order-ticket__flavor td {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.order-ticket__product-info td {
+  padding-bottom: 10px;
+}
+
+.order-ticket__flavor td {
+  padding: 3px 0;
+  border-top: 1px solid #d9cda6;
+}

@@ -1,0 +1,33 @@
+.grid-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.grid-row:last-child {
+  margin-bottom: 0;
+}
+
+.grid-col {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-col:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-row {
+    display: block;
+  }
+
+  .grid-col {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .grid-row:last-child {
+    margin-bottom: 0;
+  }
+}

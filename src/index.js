@@ -1,4 +1,9 @@
-import store from './store';
-import { actions } from './ducks/employees';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-store.dispatch(actions.fetchEmployees());
+import App from './components/App/App';
+
+ReactDOM.render(
+  <App/>,
+  document.getElementById('root')
+);

@@ -1,6 +1,7 @@
 .freezer-flavor {
   display: inline-block;
   color: #fff;
+  margin-right: 10px;
 }
 
 .freezer-flavor__inner {

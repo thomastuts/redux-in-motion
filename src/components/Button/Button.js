@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import './Button.css';
 
-const Button = ({ label, priority, className, size, onClick }) => {
+const Button = ({ label, priority, className, size, onClick, type }) => {
   const classes = classNames(
     'button',
     {
@@ -16,6 +16,7 @@ const Button = ({ label, priority, className, size, onClick }) => {
   return (
     <button
       className={classes}
+      type={type}
       onClick={onClick}
     >
       {label}
@@ -25,6 +26,7 @@ const Button = ({ label, priority, className, size, onClick }) => {
 
 Button.defaultProps = {
   priority: 'primary',
+  type: 'button',
   onClick: () => {},
 };
 

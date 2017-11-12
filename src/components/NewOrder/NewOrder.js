@@ -5,6 +5,8 @@ import { Column, Row } from '../Grid/Grid';
 import ButtonGroup from '../Button/ButtonGroup';
 import Button from '../Button/Button';
 
+import * as FLAVORS from '../../constants/flavors';
+
 import './NewOrder.css';
 
 const DEFAULT_STATE = {
@@ -21,6 +23,7 @@ class NewOrder extends Component {
   handleFormSubmit = (e) => {
     e.preventDefault();
     console.log('Order data:', this.state);
+    this.props.placeOrder(this.state);
     this.setState(DEFAULT_STATE);
   };
 
@@ -96,18 +99,20 @@ class NewOrder extends Component {
               <col width="20%"/>
             </colgroup>
             <tbody>
-            <tr>
-              <td>
-                <strong>Vanilla</strong>
-              </td>
-              <td>
-                <ButtonGroup>
-                  <Button size="small" label="-" priority="primary" onClick={() => this.handleDecreaseFlavor('VANILLA')} />
-                  <Button size="small" label={this.state.scoops['VANILLA'] || 0} priority="secondary" />
-                  <Button size="small" label="+" priority="primary" onClick={() => this.handleIncreaseFlavor('VANILLA')} />
-                </ButtonGroup>
-              </td>
-            </tr>
+            {Object.keys(FLAVORS).map(flavor => (
+              <tr key={flavor}>
+                <td>
+                  <strong>{flavor}</strong>
+                </td>
+                <td>
+                  <ButtonGroup>
+                    <Button size="small" label="-" priority="primary" onClick={() => this.handleDecreaseFlavor(flavor)} />
+                    <Button size="small" label={this.state.scoops[flavor] || 0} priority="secondary" />
+                    <Button size="small" label="+" priority="primary" onClick={() => this.handleIncreaseFlavor(flavor)} />
+                  </ButtonGroup>
+                </td>
+              </tr>
+            ))}
             </tbody>
           </table>
 

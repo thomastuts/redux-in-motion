@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import FreezerContainer from '../Freezer/FreezerContainer';
-import NewOrder from '../NewOrder/NewOrder';
+import NewOrderContainer from '../NewOrder/NewOrderContainer';
 import { Column, Row } from '../Grid/Grid';
 import OrderOverview from '../OrderOverview/OrderOverview';
 import Colleagues from '../Colleagues/Colleagues';
@@ -18,7 +18,7 @@ class App extends Component {
             <FreezerContainer />
           </Column>
           <Column>
-            <NewOrder />
+            <NewOrderContainer />
           </Column>
         </Row>
         <Row>

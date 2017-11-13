@@ -9,7 +9,8 @@
       "large": "https://randomuser.me/api/portraits/men/74.jpg",
       "medium": "https://randomuser.me/api/portraits/med/men/74.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/74.jpg"
-    }
+    },
+    "status": "Checked in"
   },
   {
     "name": {
@@ -21,7 +22,8 @@
       "large": "https://randomuser.me/api/portraits/women/44.jpg",
       "medium": "https://randomuser.me/api/portraits/med/women/44.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/44.jpg"
-    }
+    },
+    "status": "Checked in"
   },
   {
     "name": {
@@ -33,7 +35,8 @@
       "large": "https://randomuser.me/api/portraits/women/90.jpg",
       "medium": "https://randomuser.me/api/portraits/med/women/90.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/90.jpg"
-    }
+    },
+    "status": "Checked in"
   },
   {
     "name": {
@@ -45,7 +48,8 @@
       "large": "https://randomuser.me/api/portraits/men/33.jpg",
       "medium": "https://randomuser.me/api/portraits/med/men/33.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/33.jpg"
-    }
+    },
+    "status": "On leave"
   },
   {
     "name": {
@@ -57,30 +61,7 @@
       "large": "https://randomuser.me/api/portraits/men/23.jpg",
       "medium": "https://randomuser.me/api/portraits/med/men/23.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/23.jpg"
-    }
-  },
-  {
-    "name": {
-      "title": "mrs",
-      "first": "pippa",
-      "last": "jackson"
     },
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/women/14.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/women/14.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/14.jpg"
-    }
-  },
-  {
-    "name": {
-      "title": "mrs",
-      "first": "julia",
-      "last": "hirsch"
-    },
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/women/60.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/women/60.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/60.jpg"
-    }
+    "status": "Sick"
   }
 ]

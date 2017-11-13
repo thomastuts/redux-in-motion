@@ -18,21 +18,42 @@ const Colleague = ({ photo, name, status }) => (
 
 class Colleagues extends Component {
   render() {
+    let panelContent;
+
+    if (this.props.loading) {
+      panelContent = (
+        <p>Loading...</p>
+      );
+    } else {
+      if (this.props.error) {
+        panelContent = (
+          <p>Something went wrong while fetching the data: <code>{this.props.error}</code></p>
+        );
+      } else {
+        panelContent = (
+          <table className="colleagues-table">
+            <colgroup>
+              <col width="0" />
+              <col width="100%" />
+            </colgroup>
+            <tbody>
+            {this.props.data.map((person, index) => (
+              <Colleague
+                key={index}
+                photo={person.picture.thumbnail}
+                name={person.name.first}
+                status={person.status}
+              />
+            ))}
+            </tbody>
+          </table>
+        );
+      }
+    }
+
     return (
       <Panel title="Colleagues">
-        <table className="colleagues-table">
-          <colgroup>
-            <col width="0" />
-            <col width="100%" />
-          </colgroup>
-          <tbody>
-            <Colleague
-              photo="https://randomuser.me/api/portraits/women/36.jpg"
-              name="Victoria"
-              status="Checked in"
-            />
-          </tbody>
-        </table>
+        {panelContent}
       </Panel>
     );
   }

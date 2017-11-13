@@ -4,7 +4,7 @@ import FreezerContainer from '../Freezer/FreezerContainer';
 import NewOrderContainer from '../NewOrder/NewOrderContainer';
 import { Column, Row } from '../Grid/Grid';
 import OrderOverviewContainer from '../OrderOverview/OrderOverviewContainer';
-import Colleagues from '../Colleagues/Colleagues';
+import ColleaguesContainer from '../Colleagues/ColleaguesContainer';
 
 import './App.css';
 
@@ -26,7 +26,7 @@ class App extends Component {
             <OrderOverviewContainer />
           </Column>
           <Column size={1}>
-            <Colleagues />
+            <ColleaguesContainer />
           </Column>
         </Row>
       </main>

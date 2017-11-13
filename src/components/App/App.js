@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import FreezerContainer from '../Freezer/FreezerContainer';
 import NewOrderContainer from '../NewOrder/NewOrderContainer';
 import { Column, Row } from '../Grid/Grid';
-import OrderOverview from '../OrderOverview/OrderOverview';
+import OrderOverviewContainer from '../OrderOverview/OrderOverviewContainer';
 import Colleagues from '../Colleagues/Colleagues';
 
 import './App.css';
@@ -23,7 +23,7 @@ class App extends Component {
         </Row>
         <Row>
           <Column size={3}>
-            <OrderOverview />
+            <OrderOverviewContainer />
           </Column>
           <Column size={1}>
             <Colleagues />

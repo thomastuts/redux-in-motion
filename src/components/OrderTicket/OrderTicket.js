@@ -8,7 +8,7 @@ const STATUSES = [
   'paid',
 ];
 
-const OrderTicket = ({ customerName, createdAt, cone, scoops, status }) => {
+const OrderTicket = ({ customerName, createdAt, cone, scoops, status, onChangeStatus, onCancel }) => {
   const flavorRows = Object.keys(scoops).map(flavorName => {
     const amountOfScoopsForFlavor = scoops[flavorName];
     return (
@@ -30,7 +30,7 @@ const OrderTicket = ({ customerName, createdAt, cone, scoops, status }) => {
           <tr className="order-ticket__name-and-status">
             <td><strong className="order-ticket__name">{customerName}</strong></td>
             <td>
-              <select className="order-ticket__status" value={status} onChange={() => {}}>
+              <select className="order-ticket__status" value={status} onChange={(e) => onChangeStatus(e.target.value)}>
                 {STATUSES.map(s => <option key={s} value={s}>{s}</option>)}
               </select>
             </td>
@@ -41,6 +41,7 @@ const OrderTicket = ({ customerName, createdAt, cone, scoops, status }) => {
           {flavorRows}
         </tbody>
       </table>
+      <button onClick={onCancel}>Cancel</button>
     </div>
   );
 };
